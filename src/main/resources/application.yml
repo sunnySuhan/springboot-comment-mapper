@@ -1,0 +1,39 @@
+
+server:
+  port: 8989
+  context-path: /commentMapper
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+#    配置spring默认的视图解析器
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+#    springboot配置解决post乱码问题
+#    springBoot默认配置了编码过滤器 默认编码为UTF-8
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+#     SpringBoot 默认配置了文件上传解析器  默认上传单个文件大小为1MB 一次请求所上传的最大文件大小为10MB
+#    配置文件上传接解析器
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+#   配置SpringBoot 关于时间类型处理的全局参数
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+mybatis:
+  type-aliases-package: com.sgh.entity
+#  mapper-locations:
