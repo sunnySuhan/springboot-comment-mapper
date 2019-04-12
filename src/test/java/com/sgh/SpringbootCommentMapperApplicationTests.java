@@ -15,10 +15,5 @@ import java.util.List;
 public class SpringbootCommentMapperApplicationTests {
 	@Autowired
 	UserDao userDao;
-	@Test
-	public void selectAll() {
-		List<User> users = userDao.selectAll();
-		System.out.println(users);
-	}
 	
 }
