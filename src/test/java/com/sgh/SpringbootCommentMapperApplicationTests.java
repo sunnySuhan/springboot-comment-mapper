@@ -29,7 +29,7 @@ public class SpringbootCommentMapperApplicationTests {
 		userDao.insert(user);
 	}
 
-
+    //这是判断是否包含主键
 	@Test
 	public void existsWithPrimaryKey(){
 		boolean b = userDao.existsWithPrimaryKey(1);
