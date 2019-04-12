@@ -35,15 +35,4 @@ public class SpringbootCommentMapperApplicationTests {
 		boolean b = userDao.existsWithPrimaryKey(1);
 		System.out.println(b);
 	}
-
-	@Test
-	public void delete() {
-		User user = new User();
-		user.setId(2);
-		userDao.delete(user);
-
-
-    }
-
-
 }
