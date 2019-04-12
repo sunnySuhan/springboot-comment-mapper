@@ -41,7 +41,6 @@ public class SpringbootCommentMapperApplicationTests {
 		User user = new User();
 		user.setId(2);
 		userDao.delete(user);
-
     }
 
 
