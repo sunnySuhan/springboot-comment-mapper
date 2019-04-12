@@ -1,6 +1,7 @@
 package com.sgh;
 
 import com.sgh.dao.UserDao;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,4 +13,8 @@ public class SpringbootCommentMapperApplicationTests {
     @Autowired
     UserDao userDao;
 
+    @Test
+    public void test1() {
+        System.out.println("aaaaaaa");
+    }
 }
