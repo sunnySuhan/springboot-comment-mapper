@@ -20,21 +20,5 @@ public class SpringbootCommentMapperApplicationTests {
 		List<User> users = userDao.selectAll();
 		System.out.println(users);
 	}
-	@Test
-	public void insert(){
-
-		User user = new User();
-		user.setPassword("123");
-		user.setName("sgh");
-		userDao.insert(user);
-	}
-
-    //这是判断是否包含主键
-	@Test
-	public void existsWithPrimaryKey(){
-		boolean b = userDao.existsWithPrimaryKey(1);
-		System.out.println(b);
-
-        System.out.println("aaaa");
- 	}
+	
 }
