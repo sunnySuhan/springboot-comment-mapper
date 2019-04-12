@@ -34,5 +34,6 @@ public class SpringbootCommentMapperApplicationTests {
 	public void existsWithPrimaryKey(){
 		boolean b = userDao.existsWithPrimaryKey(1);
 		System.out.println(b);
+		System.out.println(c);
 	}
 }
